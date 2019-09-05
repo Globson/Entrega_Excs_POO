@@ -17,39 +17,32 @@ public class Ex7 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
-        System.out.print("Entre com a hora:");
-        int hora1 = sc.nextInt();
-        System.out.print("Entre com os minutos:");
-        int minuto1 = sc.nextInt();
-        System.out.print("Entre com os segundos:");
-        int segundo1 = sc.nextInt();
-        System.out.print("Entre com a segunda hora:");
-        int hora2 = sc.nextInt();
-        System.out.print("Entre com os minutos:");
-        int minuto2 = sc.nextInt();
-        System.out.print("Entre com os segundos:");
-        int segundo2 = sc.nextInt();
+        System.out.println("Entre com os horarios na seguinte formatacao: HH:MM:SS");
+        System.out.print("Entre com o primeiro horario:");
+        String linha = sc.nextLine();
+        String partes1[] = new String[3];
+        partes1 = linha.split(":");
+        System.out.print("Entre com o segundo horario:");
+        String linha2 = sc.nextLine();
+        String partes2[] = new String[3];
+        partes2 = linha2.split(":");
+        int hora1 = Integer.parseInt(partes1[0]);
+        int minuto1 = Integer.parseInt(partes1[1]);
+        int segundo1 = Integer.parseInt(partes1[2]);
+        int hora2 = Integer.parseInt(partes2[0]);
+        int minuto2 = Integer.parseInt(partes2[1]);
+        int segundo2 = Integer.parseInt(partes2[2]);
         int horario1 = segundo1 + (minuto1*60) + (hora1*3600);
         int horario2 = segundo2 + (minuto2*60) + (hora2*3600);
-        int horario3,hora3,minuto3,segundo3;
+        int diferenca;
         if(horario1 > horario2){
-            horario3 = horario1-horario2;
-            hora3 = horario3/3600;
-            horario3 = horario3 - hora3;
-            minuto3 = horario3/60;
-            horario3 = horario3 - minuto3;
-            segundo3 = horario3;
-            System.out.println("A diferença de horario é: "+hora3+" : "+minuto3+" : "+segundo3);
+            diferenca = horario1 - horario2;
+            System.out.println("A diferença de horario em segundos é: "+diferenca);
         }else if(horario2 > horario1){
-            horario3 = horario2-horario1;
-            hora3 = horario3/3600;
-            horario3 = horario3 - hora3;
-            minuto3 = horario3/60;
-            horario3 = horario3 - minuto3;
-            segundo3 = horario3;
-            System.out.println("A diferença de horario é: "+hora3+" : "+minuto3+" : "+segundo3);
+            diferenca = horario2 - horario1;
+            System.out.println("A diferença de horario em segundos é: "+diferenca);
         }else{
-            System.out.println("A diferença de horario é: 0 : 0 : 0");
+            System.out.println("A diferença de horario em segundos é: 0");
         }
         sc.close();
     }
