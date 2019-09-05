@@ -35,7 +35,7 @@ public class Ex5 {
              System.out.println(Meses[i]+" = "+a);
             }
         }
-    }   
-    
-    
+    }
+
+
 }
