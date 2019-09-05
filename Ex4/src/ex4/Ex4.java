@@ -33,7 +33,7 @@ public class Ex4 {
         else{
             System.out.println("O pedido foi aceito!");
         }
-        
+        sc.close();
     }
     
 }

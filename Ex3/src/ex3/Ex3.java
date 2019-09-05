@@ -31,6 +31,7 @@ public class Ex3 {
         }
         float quociente = a/b;
         System.out.println("O resultado é: "+quociente);
+        sc.close();
     }
     
 }

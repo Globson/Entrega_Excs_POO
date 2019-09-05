@@ -39,6 +39,7 @@ public class Ex9 {
         }
         media = soma/n;
         System.out.println("\nMedia "+media+"\nMaior: "+maior+"\nMenor: "+menor+"\nQuantidade de pares: "+qpar+"\nQuantidade de impares: "+qimpar);
+        sc.close();
     }
     
 }

@@ -3,28 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ex2;
+package ex10;
 import java.util.Scanner;
 /**
  *
  * @author grobs
  */
-public class Ex2 {
+public class Ex10 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int a,b,c;
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Entre com o ano de nascimento: ");
-        a = sc.nextInt();
-        System.out.printf("Entre com o ano atual: ");
-        b = sc.nextInt();
-        c = b - a;
-        System.out.println("Sua idade caso ja tenha feito aniversario neste ano é: " +c+ "\nCaso ainda não tenha feito aniversario este ano, sua idade é: "+(c-1));
-        sc.close();
+        String linha;
+        do{
+        linha = sc.nextLine();
+        
+        }while(!linha.equals("fim"));
     }
     
 }

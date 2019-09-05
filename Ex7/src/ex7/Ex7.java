@@ -51,7 +51,7 @@ public class Ex7 {
         }else{
             System.out.println("A diferença de horario é: 0 : 0 : 0");
         }
-
+        sc.close();
     }
 
 }

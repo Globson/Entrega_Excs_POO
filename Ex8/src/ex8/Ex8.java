@@ -31,7 +31,7 @@ public class Ex8 {
       produto = produto * numeros[j];
     }
     System.out.println("Produto de numeros: "+produto+"\nSoma de numeros: "+soma);
-  
+    sc.close();
     }
 
     

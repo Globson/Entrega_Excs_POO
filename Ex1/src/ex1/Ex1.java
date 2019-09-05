@@ -27,6 +27,7 @@ public class Ex1 {
            b++;
        }
       System.out.printf("\n");
+      sc.close();
     }
     
 }
