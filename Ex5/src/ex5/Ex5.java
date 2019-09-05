@@ -10,26 +10,32 @@ import java.util.Scanner;
  * @author grobs
  */
 public class Ex5 {
-    public enum OpcoesMenu {    
-    Janeiro(1),Fevereiro(2),Marco(3),Abril(4),Maio(5),Junho(6),Julho(7),Agosto(8),Setembro(9),Outubro(10),Novembro(11),Dezembro(12);
-     
-    private final int valor;
-    OpcoesMenu(int valorOpcao){
-        valor = valorOpcao;
-    }
-    public int getValor(){
-        return valor;
-    }
-}
-    
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
-        int a;
         System.out.printf("Entre com o nome do mes:");
         String mes = sc.nextLine();
-        OpcoesMenu Mes = mes;
-        
+        String Meses[] = new String[12];
+        Meses[0] = "Janeiro";
+        Meses[1] = "Fevereiro";
+        Meses[2] = "Marco";
+        Meses[3] = "Abril";
+        Meses[4] = "Maio";
+        Meses[5] = "Junho";
+        Meses[6] = "Julho";
+        Meses[7] = "Agosto";
+        Meses[8] = "Setembro";
+        Meses[9] = "Outubro";
+        Meses[10] = "Novembro";
+        Meses[11] = "Dezembro";
+        for(int i = 0; i<12;i++){
+         if(!mes.equals(Meses[i])){
+        } else {
+             int a = i+1;
+             System.out.println(Meses[i]+" = "+a);
+            }
+        }
     }   
+    
     
 }
