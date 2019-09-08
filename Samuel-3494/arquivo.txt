@@ -1,0 +1,12 @@
+H;35;1.7;80;Jose
+H;30;1.6;65;Marcos
+M;32;1.5;56;Linda
+H;28;1.65;67;Herbert
+H;19;1.73;78;Cleiton
+M;20;1.65;86;Maria
+H;18;1.54;75;Rogerio
+M;45;1.68;74;Claudineia
+H;54;1.7;86;Lucas
+H;34;1.80;80;Joao
+M;27;1.76;70;Rita
+H;39;1.67;78;Renato
