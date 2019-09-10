@@ -163,7 +163,7 @@ public class Folha {
 
     public static void main(String[] args) {
        Funcionario func1 = new Funcionario("Samuel","02/07/1999");
-       func1.contratar(true, 1800, 2, "04/04/2018");
+       func1.contratar(true, 2900, 2, "04/04/2018");
        func1.get_Nome_Nascimento();
        func1.get_valorSalario();
        func1.get_numeroFilhosMenores();
