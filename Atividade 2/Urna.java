@@ -1,5 +1,5 @@
 public class Urna{
-  private static String Candidatos[]=  {"Joao","Raniere","Samuel","Ferreira","Branco","Nulos"};
+  private static String Candidatos[]=  {"Joao","Raniere","Samuel","Ferreira","Branco","Nulos"};  //Canditatos
   private static int codigosCanditados[] = {01,02,03,04,00};
   private static int Votos[] = new int[6];
   private static boolean EleitorAutorizado = false;
@@ -50,9 +50,10 @@ public class Urna{
 
 
   public void getCanditados(){
+    System.out.println("\t Eleicao inicializada!");
     for(int i = 0;i<5;i++){
       System.out.println("Nome do canditado: "+Candidatos[i]+" codigo para voto: "+codigosCanditados[i]);
     }
-    System.out.println("Para anular seu voto basta entrar com um codigo para candidato invalido");
+    System.out.println("Para anular seu voto basta entrar com um codigo para candidato invalido\n\n");
   }
 }
