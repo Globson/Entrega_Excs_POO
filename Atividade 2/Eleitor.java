@@ -1,6 +1,6 @@
 public class Eleitor{
-  private String Titulo;
-  private boolean votou = false;
+  private static String Titulo;
+  private static boolean votou = false;
 
   public Eleitor(String NTitulo){
     Titulo = NTitulo;
@@ -8,8 +8,8 @@ public class Eleitor{
   public String get_Titulo(){
     return Titulo;
   }
-  public void set_votou(){
-    votou = true;
+  public void set_votou(boolean Voto){
+    votou = Voto;
   }
   public boolean get_votou(){
     return votou;
